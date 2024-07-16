@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+        .abc {
+            color: greenyellow;
+        }
+        .qqq {
+            color: peru;
+        }
+        #xyz {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p class="abc qqq">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quia quis hic molestiae sed saepe ea repellat quibusdam iste, alias magnam. Consectetur, deleniti optio? Corrupti iure minima minus laudantium atque.
+    </p>
+    <p class="abc" id="xyz" style="color:pink">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tenetur sed odio consectetur dignissimos aliquid obcaecati, maxime sit non itaque quod similique at placeat dolor perspiciatis necessitatibus, quis ex delectus.
+    </p>
+    <!-- 
+        CSS權重（明確性）
+        影響的元素愈少，權重愈重，明確性數值愈大，愈優先套用
+        
+        物以稀為貴
+
+        嵌入式樣式 > id > class > tag
+
+        當樣式衝突時，先判斷權重，若權重相同，則判斷順序，後寫的優先
+    -->
+    <div class="abc qqq" style="color:pink;">test</div>
+    <p id="xyz" class="qqq">test</p>
+</body>
+</html>
