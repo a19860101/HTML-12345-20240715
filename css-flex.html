@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* row, row-reverse, column, column-reverse */
+        }
+        .box {
+            width: 300px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        /* 
+            當設定box-sizing:border-box時
+            padding跟border的寬度會包含在width內
+            若沒有設定
+            padding跟border的寬度則要另外加上去
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title 1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima distinctio, aliquam voluptates ullam expedita a placeat est ipsam incidunt odit.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima distinctio, aliquam voluptates ullam expedita a placeat est ipsam incidunt odit.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima distinctio, aliquam voluptates ullam expedita a placeat est ipsam incidunt odit.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 4</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima distinctio, aliquam voluptates ullam expedita a placeat est ipsam incidunt odit.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

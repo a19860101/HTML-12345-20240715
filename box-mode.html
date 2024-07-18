@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        .box {
+            width: 200px;
+            /* height: 200px; */
+            min-height: 200px;
+            max-height: 600px;
+            background-color: #ccc;
+
+            overflow: auto;
+            /* visible, hidden, scroll, auto */
+            /* overflow-y: scroll; */
+            /* overflow-x: hidden; */
+
+            /* border 邊框 */
+            border: 5px solid red;
+            /* border-width: 15px; */
+            /* border-style: solid; */
+            /* 
+                solid, dotted, dashed, double
+                inset, outset, groove, ridge
+            */
+            /* border-color: red; */
+
+            /* border-top: 5px solid #f00; */
+            /* border-bottom: 5px solid #0af; */
+            /* border-left: 5px solid #098; */
+            /* border-right: 5px solid #009; */
+
+            /* border-top-style: ;
+            border-top-color: ;
+            border-top-width: ;
+            border-bottom-style: ;
+            border-bottom-color: ;
+            border-bottom-width: ;
+            border-left-style: ;
+            border-left-color: ;
+            border-left-width: ;
+            border-right-style: ;
+            border-right-color: ;
+            border-right-width: ; */
+
+            /* padding 內距 */
+            padding: 30px;
+            
+            /* padding: 30px 100px;  */
+            /* 上下 左右 */
+
+            /* padding: 30px 100px 0px; */
+            /* 上 左右 下 */
+
+            /* padding: 30px 100px 0px 50px; */
+            /* 上 右 下 左 */
+            
+            /* padding-top: 100px; */
+            /* padding-bottom: 50px; */
+            /* padding-left: 20px; */
+            /* padding-right: 30px; */
+
+            /* margin 外距 */
+            /* margin: 50px; */
+            /* 
+                在預設狀態下，上外距跟下外距會重疊
+            */
+            /* margin-top: 100px; */
+            /* margin-bottom: 50px; */
+            /* margin-left: 100px; */
+            /* margin-right: 50px; */
+
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+
+            margin: 30px auto;
+
+            display: block;
+        }
+        a {
+            padding: 8px 30px;
+            background-color: #ffd063;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+        }
+        /* 
+            inline-block原則上跟block是相同的
+            差別在於inline-block為橫向排列
+            block為縱向排列
+        */
+    </style>
+</head>
+<body>
+    <!-- 
+        盒子模型只在區塊模式（block）上有作用
+    -->
+    <span class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatum!
+    </span>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia vitae modi ex voluptate? Corporis nulla, tempora maxime quasi quae neque sint placeat itaque accusamus in error veniam pariatur sit?
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia vitae modi ex voluptate? Corporis nulla, tempora maxime quasi quae neque sint placeat itaque accusamus in error veniam pariatur sit?
+    </div>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+</body>
+</html>
