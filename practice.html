@@ -30,7 +30,10 @@
             display: flex;
             gap: 15px;
         }
-
+        /* 虛擬類別  */
+        .nav-link:hover {
+            color: #EF5A6F;
+        }
         header {
             width: 100%;
             aspect-ratio: 21 / 9;
@@ -86,6 +89,15 @@
         }
         .folio-item img {
             width: 100%;
+            /* opacity: .5; */
+            /* filter:grayscale() */
+            /* filter:blur(5px) */
+            filter:brightness(0.3)
+        }
+        .folio-item img:hover {
+            /* opacity: 1; */
+            /* filter:none; */
+            filter: brightness(1)
         }
         footer {
             padding-top:20px;
