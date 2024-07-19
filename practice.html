@@ -13,13 +13,19 @@
         }
         nav {
             width: 100%;
-            background-color: #536493;
+            background-color: #53649384;
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 70px;
             padding-left: 15px;
             padding-right: 15px;
+
+            position: fixed;/* 固定定位 */
+            backdrop-filter: blur(8px);
+            top:0;
+            left:0;
+            z-index: 999;
         }
         /* 後代選取器 */
         nav a {
@@ -112,9 +118,8 @@
     <nav>
         <a href="#" class="nav-logo">Logo</a>
         <div class="nav-menu">
-            <a href="#" class="nav-link">關於我</a>
-            <a href="#" class="nav-link">作品集</a>
-            <a href="#" class="nav-link">服務項目</a>
+            <a href="#about" class="nav-link">關於我</a>
+            <a href="#folio" class="nav-link">作品集</a>
         </div>
     </nav>
     <header></header>
