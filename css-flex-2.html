@@ -18,6 +18,42 @@
             width: 200px;
             box-sizing: border-box;
         }
+        .box:nth-of-type(1){
+            /* order: 2; */
+        }
+        .box:nth-of-type(2){
+            order: 1;
+        }
+        .box:nth-of-type(3){
+            /* order: 3; */
+        }
+        .container-2 {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            /* 
+                start, center, end
+                stretch, baseline
+            */
+        }
+        .box-2 {
+            width: 600px;
+            padding: 15px;
+
+            background-color: #098;
+
+        }
+        .box-2:first-of-type{
+            order: 2;
+        }
+        .box-2:last-of-type{
+            order: 1;
+        }
+        /* 
+            order
+            自然排序優先於人工排序（order）
+        */
     </style>
 </head>
 <body>
@@ -38,6 +74,17 @@
             <h2>title 3</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores rerum dolore cumque autem, ratione vitae porro maxime ad inventore!
+            </p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="box-2">
+            <img src="https://picsum.photos/id/40/600" alt="">
+        </div>
+        <div class="box-2">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cumque atque ullam facere pariatur voluptatibus incidunt. Voluptates, ab vero? Omnis quia mollitia voluptatibus iste sed voluptatum, esse minus sint delectus.
             </p>
         </div>
     </div>

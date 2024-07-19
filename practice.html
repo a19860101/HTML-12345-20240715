@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 萬用選取器 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            width: 100%;
+            background-color: #536493;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        /* 後代選取器 */
+        nav a {
+            color: #FFF1DB;
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        header {
+            width: 100%;
+            aspect-ratio: 21 / 9;
+            max-height: 600px;
+            background-image: url('https://picsum.photos/id/40/1600/900');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #about {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            background-color: #FFF1DB;
+        }
+        .about-container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .about-img {
+            width: 600px;
+        }
+        .about-img img {
+            width: 100%;
+        }
+        .about-info {
+            width: 600px;
+            padding: 30px;
+        }
+        .about-info li {
+            list-style-position: inside;
+        }
+        /* 子代選取器 */
+        .about-info > * {
+            margin-bottom: 15px;
+        }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="nav-logo">Logo</a>
+        <div class="nav-menu">
+            <a href="#" class="nav-link">關於我</a>
+            <a href="#" class="nav-link">作品集</a>
+            <a href="#" class="nav-link">服務項目</a>
+        </div>
+    </nav>
+    <header></header>
+    <section id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://picsum.photos/800/600" alt="">
+            </div>
+            <div class="about-info">
+                <h2>關於我</h2>
+                <p>
+                    購物愛情正確要去激烈青年你在有着而已引擎，相當也有當時發佈一個月準備好激動意義，收藏本頁走了，頭銜。
+                </p>
+                <h3>專長</h3>
+                <ul>
+                    <li>平面設計</li>
+                    <li>網頁設計</li>
+                    <li>影片剪輯</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
